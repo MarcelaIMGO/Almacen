@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="814.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VistaVentasController">
+   <children>
+      <Label layoutX="600.0" layoutY="64.0" text="Ventas" underline="true">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="73.0" text="Codigo: " />
+      <Label layoutX="99.0" layoutY="115.0" text="Producto:" />
+      <Label layoutX="50.0" layoutY="156.0" text="Cliente que hace la compra: " />
+      <Label layoutX="115.0" layoutY="199.0" text="Total: " />
+      <Label layoutX="122.0" layoutY="240.0" text="Iva: " />
+      <TextField fx:id="txtCodigo" layoutX="312.0" layoutY="68.0" />
+      <TextField fx:id="txtDetalleVenta" layoutX="312.0" layoutY="110.0" />
+      <TextField fx:id="txtComprador" layoutX="312.0" layoutY="153.0" />
+      <TextField fx:id="txtTotal" layoutX="312.0" layoutY="196.0" />
+      <TextField fx:id="txtIva" layoutX="312.0" layoutY="237.0" />
+      <TableView fx:id="tblVentas" layoutX="36.0" layoutY="305.0" onMouseClicked="#seleccionar" prefHeight="411.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="colFecha" prefWidth="110.0" text="Fecha" />
+            <TableColumn fx:id="colDetalleVenta" prefWidth="154.0" text="Detalle de venta" />
+            <TableColumn fx:id="colDetalleComprador" prefWidth="169.0" text="Comprador" />
+            <TableColumn fx:id="colTotal" prefWidth="127.0" text="Total" />
+            <TableColumn fx:id="colIva" prefWidth="87.0" text="Iva" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnActualizar" layoutX="351.0" layoutY="742.0" mnemonicParsing="false" onAction="#clickActualizar" text="Actualizar" />
+      <Button fx:id="btnEliminar" layoutX="477.0" layoutY="742.0" mnemonicParsing="false" onAction="#clickEliminar" text="Eliminar" />
+      <Button fx:id="btnGuardar" layoutX="242.0" layoutY="742.0" mnemonicParsing="false" onAction="#clickGuardar" text="Guardar" />
+      <ImageView fitHeight="174.0" fitWidth="220.0" layoutX="556.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ventas.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

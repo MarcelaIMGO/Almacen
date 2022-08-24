@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VistaClienteProductoController">
+   <children>
+      <Label layoutX="89.0" layoutY="46.0" prefHeight="50.0" prefWidth="192.0" text="ALMACEN" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="259.0" text="seleccione la opción que desee" />
+      <Label layoutX="113.0" layoutY="119.0" text="¿Que desea registrar?" />
+      <Button fx:id="btnCliente" layoutX="63.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickCliente" text="Cliente" />
+      <Button fx:id="btnProducto" layoutX="247.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickProducto" text="Producto" />
+      <Button fx:id="btnVentas" layoutX="153.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickVentas" text="Ventas" />
+   </children>
+</AnchorPane>
